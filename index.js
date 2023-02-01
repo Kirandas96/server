@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // cors for multiple origin
 
-var allowedOrigins = ["https://client-bhk4.vercel.app/"]
+var allowedOrigins = ["https://client-bhk4.vercel.app"]
 
 app.use(cors({
   origin: function(origin, callback){
