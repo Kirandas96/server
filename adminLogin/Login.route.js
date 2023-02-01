@@ -32,14 +32,9 @@ authRouter.post("/login", async (req, res) => {
                 res.send({message:"wrong email"})
             }
             else{        
-                // const match=result.checkPassword(req.body.password)            
-                // if(!match){
-                //     res.send({message:"wrong password"})
-                // }
-                // else{
-                //     const token=createToken(result)
+                
                     res.send({message:"login successfull",data:result.name})
-                // } 
+                
 
             }
         })
